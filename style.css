@@ -8,15 +8,17 @@ body {
     height: 100vh;
     margin: 0;
 }
-.main-container {
+
+.main-container, .login-container {
     background-color: white;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 350px;
 }
 
-h1 {
+h1, h2 {
     margin-bottom: 20px;
     font-size: 2em;
 }
@@ -26,17 +28,25 @@ p {
     font-size: 1.2em;
 }
 
-.login-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    text-align: center;
+a, .login-btn {
+    color: #4285F4;
+    text-decoration: none;
+    background-color: #4285F4;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    transition: background-color 0.3s ease;
 }
 
-h2 {
-    margin-bottom: 20px;
+a:hover, .login-btn:hover {
+    background-color: #357ae8;
+    text-decoration: underline;
+}
+
+.login-container {
+    padding: 20px;
 }
 
 .input-group {
@@ -65,6 +75,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -80,28 +91,28 @@ button:hover {
     padding: 10px;
     width: 100%;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
 }
 
 .google-btn {
     background-color: #4285F4;
-    color: white;
+}
+
+.google-btn:hover {
+    background-color: #357ae8;
 }
 
 .apple-btn {
     background-color: #000000;
-    color: white;
+}
+
+.apple-btn:hover {
+    background-color: #333333;
 }
 
 .sign-up {
     margin-top: 20px;
-}
-
-a {
-    color: #4285F4;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
